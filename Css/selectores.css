@@ -18,8 +18,20 @@ body {
 h1 {
     color: aqua;
 }
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(37, 35, 35);
+    border: 1px solid #979797;
+}
 
-
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
 /*
 
 Selector por Clase
@@ -69,18 +81,20 @@ elemento padre se heredan a sus hijos, pero pueden ser sobrescritos.
 
 nav ul{
     list-style: none;  /* Elimina los marcadores de lista*/
+    padding: 0;
 }
 
 nav li{
     margin: 0 300px;
+    margin-right: 20px;
 }
 
 nav a {
     text-decoration: none;  /*Elimina el subrayado de la etiqueta a*/
-    color: gray;
+    color: rgb(190, 190, 190);
+    font-weight: bold;
 }
 
 nav a:hover{
     background-color: rgb(129, 77, 121);
 }
-
