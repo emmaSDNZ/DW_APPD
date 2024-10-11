@@ -1,0 +1,86 @@
+
+/*
+Selectores por Etiqueta
+
+etiqueta { 
+    propiedad: valor 
+}
+
+Cuando utilizamos el nombre de una etiqueta HTML dentro de nuestras reglas CSS, 
+estamos creando un selector de etiqueta. Este selector hace referencia a todos 
+los elementos del documento HTML que tengan esa misma etiqueta.
+*/
+
+body {
+    background-color: black;
+    color: aliceblue;
+}
+h1 {
+    color: aqua;
+}
+
+
+/*
+
+Selector por Clase
+
+.nombreCalse {
+    propiedad: Valor    
+}
+
+Un selector de clase te permite aplicar estilos a múltiples elementos HTML
+que compartan una misma clase. Recordemos que para seleccionar la clase se debe
+poner un punto 
+*/
+
+.subTitulo{
+    color: chocolate;
+    font-size: 40px ;
+}
+
+/*
+
+Selector por ID
+
+#id-del-elemento {
+    propiedad: valor;
+}
+
+Un selector de ID te permite aplicar estilos a un único elemento HTML. Cada 
+elemento HTML puede tener un ID único, lo que significa que puedes aplicar 
+estilos muy específicos a elementos individuales. Para seleccion el Id se hace 
+con el #
+IMPORTANTE: LOS ID NO SE DEBEN REPETIR.
+
+*/
+
+#tituloPrincipal{
+    color: blueviolet;
+    font-size: 80px;
+}
+
+/*
+Jerarquia
+La jerarquía HTML influye en cómo aplicamos los estilos. Los estilos de un 
+elemento padre se heredan a sus hijos, pero pueden ser sobrescritos.
+
+
+*/
+
+nav ul{
+    list-style: none;  /* Elimina los marcadores de lista*/
+}
+
+nav li{
+    margin: 0 300px;
+}
+
+nav a {
+    text-decoration: none;  /*Elimina el subrayado de la etiqueta a*/
+    color: gray;
+}
+
+nav a:hover{
+    background-color: rgb(129, 77, 121);
+}
+
